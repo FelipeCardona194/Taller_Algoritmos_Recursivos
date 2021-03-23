@@ -1,0 +1,29 @@
+3) Explique por qué el siguiente método puede producir un valor incorrecto cuando se
+ejecute:
+
+static public long factorial (long n) {
+ if (n == 0 || n == 1)
+ return 1;
+ else
+ return n * factorial (--n);
+}			^
+			|
+			|
+			|
+		Por las leyes de los signos
+
+4) 1! = 1
+   2! = 1 x 2 = 2
+   3! = 1 x 2 x 3 = 6
+   4! = 1 x 2 x 3 x 4 = 24
+   5! = 1 x 2 x 3 x 4 x 5 = 120
+
+
+5)1! = 1
+  2! = 1 x 2 = 2
+  3! = 1 x 2 x 3 = 6
+  4! = 1 x 2 x 3 x 4 = 24
+  5! = 1 x 2 x 3 x 4 x 5 = 120
+  6! = 1 x 2 x 3 x 4 x 5 x 6 = 720
+  7! = 1 x 2 x 3 x 4 x 5 x 6 x 7 = 5040
+  8! = 1 x 2 x 3 x 4 x5 x 6 x 7 x 8 = 40320
